@@ -1,8 +1,6 @@
-Javascript를 주언어로 사용하던 내가 C++ 알고리즘 코드에 흥미가 생겨 C++ 학습을 통한 알고리즘 학습정리
-
 ## Edu
 
-- C++ 기본 문법
+- C++ 문법 복습
 - C++ 코드 Javascript 매핑
 - 알고리즘 학습
 
@@ -10,12 +8,13 @@ Javascript를 주언어로 사용하던 내가 C++ 알고리즘 코드에 흥미
 
 ```
 // compile
-g++ -std=c++14 -Wall "컴파일 파일명(ex: test.cpp)" "실행파일명(ex: test.out)"
+g++ -std=c++14 -Wall "컴파일 파일명(ex: test.cpp)" -o "실행파일명(ex: test.out)"
 // compile ex
-g++ -std=c++14 -Wall test.cpp test.out
+g++ -std=c++14 -Wall test.cpp -o test.out
 
 // execute
 "실행파일명" (ex: test.out)
 // execute ex
-test.out or ./test.out
+test.out (window)
+./test.out (mac)
 ```
