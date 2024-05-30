@@ -48,12 +48,13 @@ memcpy()와 똑같은 동작을 하지만 vector와 Array 모두 쓰일 수 있�
 copy (InputIterator first, InputIterator last, OutputIterator result)
 ```
 
-## sort()
+## sort()와 stable_sort()
 
 배열 등 컨테이너들의 요소를 정렬하는 함수.
 
 ```
 sort(first, last, *커스텀비교함수)
+stable_sort(first, last, *커스텀비교함수)
 ```
 
 `first`는 정렬하고 싶은 배열의 첫번째 이터레이터로 주소값이 들어가야한다.
@@ -65,3 +66,7 @@ first <= 범위 < last 라는 범위를 갖는다.
 세번째 매개변수, 커스텀비교함수를 넣지 않으면 기본적으로 오름차순이며 이를 커스텀비교함수에 `greater<타입>()`을 넣어 내림차순으로 변경할 수 있다.
 
 `less<타입>()`을 통해 오름차순으로 정렬할 수 도 있다.
+
+`sort()`는 불안정 정렬 알고리즘을 사용하고, 이는 같은 값을 가진 요소들의 들어온 순서를 정렬 후에 보존하지 않기에, 같은 값을 가진 요소의 순서는 변경될 수 있다.
+
+`stable_sort()`는 안정 정렬 알고리즘을 사용하며 같은 값을 가진 요소들의 들어온 순서를 정렬후에도 보존한다.
