@@ -108,3 +108,18 @@ __last – End of range.
 Returns:
 Iterator referencing the first instance of the largest value.
 ```
+
+## min_element()
+
+배열 중 가장 작은 요소를 추출하는 함수
+
+```c++
+Return the minimum element in a range.
+
+Parameters:
+__first – Start of range.
+__last – End of range.
+
+Returns:
+Iterator referencing the first instance of the smallest value.
+```
