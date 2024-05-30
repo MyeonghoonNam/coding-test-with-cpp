@@ -84,3 +84,12 @@ unique는 범위안의 있는 요소 중 앞에서부터 서로를 비교해가�
 
 `lower_bound()` : 배열에서 지정한 수 이상값
 `upper_bound()` : 배열에서 지정한 수 초과값
+
+## accumulate()
+
+배열의 합을 쉽고 빠르게 구해주는 함수
+
+```c++
+// accumulate(시작범위, 끝범위, 합계 시작값)
+accumulate(first It, second It, init)
+```
