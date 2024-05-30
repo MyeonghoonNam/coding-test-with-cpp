@@ -93,3 +93,18 @@ unique는 범위안의 있는 요소 중 앞에서부터 서로를 비교해가�
 // accumulate(시작범위, 끝범위, 합계 시작값)
 accumulate(first It, second It, init)
 ```
+
+## max_element()
+
+배열 중 가장 큰 요소를 추출하는 함수
+
+```c++
+Return the maximum element in a range.
+
+Parameters:
+__first – Start of range.
+__last – End of range.
+
+Returns:
+Iterator referencing the first instance of the largest value.
+```
