@@ -53,3 +53,9 @@ set과 다른 점은 중복되는 요소도 집어넣을 수 있다.
 후입선출(LIFO, Last In First Out)을 가진 자료 구조
 
 삽입 및 삭제에 O(1), 탐색에 O(n)
+
+## queue
+
+선입선출(FIFO, First In First Out)을 지닌 자료 구조
+
+삽입 및 삭제에 O(1), 탐색에 O(n)
