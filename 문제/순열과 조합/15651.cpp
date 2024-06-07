@@ -1,9 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+#define MAX_SIZE 10
+
 int N, M;
 vector<int> numbers;
-vector<int> selected;
+vector<int> selected(MAX_SIZE);
 
 void print() {
   for (int i = 0; i < M; i++) cout << selected[i] << " ";
@@ -19,9 +21,8 @@ void permutation(int cnt) {
   }
 
   for (int i = 0; i < N; i++) {
-    selected.push_back(numbers[i]);
+    selected[cnt] = numbers[i];
     permutation(cnt + 1);
-    selected.pop_back();
   }
 
   return;
